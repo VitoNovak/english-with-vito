@@ -230,9 +230,17 @@
         }
         
         .problem-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .problem-cards {
+        grid-template-columns: 1fr;
+    }
+}
         }
         
         .problem-card {
